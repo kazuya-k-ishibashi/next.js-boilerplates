@@ -1,0 +1,29 @@
+{
+  "name": "next.js_v12.0_typescript_eslint_prettier",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kazuya-k-ishibashi/next.js-boilerplates",
+    "directory": "packages/next.js_v12.0_typescript_eslint_prettier"
+  },
+  "author": "kazuya-k-ishibashi <kazuya.ishibashi.wn@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.0.10",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.17",
+    "@types/react": "17.0.39",
+    "eslint": "8.8.0",
+    "eslint-config-next": "12.0.10",
+    "typescript": "4.5.5"
+  }
+}
