@@ -1,5 +1,13 @@
 #!/bin/sh
 
+# prettier
+ADDED_FILES=$(git diff --cached --name-only --diff-filter=ACMR "*.js" "*.ts" "*.tsx" | sed 's| |\\ |g')
+if [ -n "$ADDED_FILES" ]
+then
+  echo "$ADDED_FILES" | xargs npx prettier --write
+  echo "$ADDED_FILES" | xargs git add
+fi
+
 # confirm build
 yarn build
 if [ $? -ne 0 ]
