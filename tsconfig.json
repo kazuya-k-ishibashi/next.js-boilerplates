@@ -8,6 +8,7 @@
     "allowJs": true,
     "checkJs": true,
     "jsx": "preserve",
+    "jsxImportSource": "@emotion/react",
     // "declaration": true,
     // "declarationMap": true,
     "sourceMap": true,
