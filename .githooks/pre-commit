@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# confirm build
+yarn build
+if [ $? -ne 0 ]
+then
+  echo "git pre-commit check failed: build failed."
+  exit 1
+fi
+
+exit 0
